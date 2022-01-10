@@ -1,0 +1,14 @@
+<template>
+    <c-address-component >
+        <lightning-input onaddresschange={changeaddress}></lightning-input>
+    </c-address-component>
+    <c-personal-component >
+        <lightning-input onpersonalchange={changepersonal}></lightning-input>
+    </c-personal-component>
+    <c-professional-component>
+        <lightning-input onprofessionalchange={changeprofessional}></lightning-input>
+    </c-professional-component>
+    <div slot="footer">
+            <lightning-button label="Create info Record" variant="brand" onclick={insertemployeeAction}></lightning-button>        
+          </div>
+</template>
